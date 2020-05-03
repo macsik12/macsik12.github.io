@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla-Telecom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/carousel.css">
+    <script type="text/javascript" src="js/simplycarousel.js">
+
+    </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="img/logo.png" alt="Логотип" class="logo-img">
+            </div>
+            <div class="slogan">
+                <p>Ваш ГИД В Мир IT Технологий</p>
+            </div>
+            <div class="contacts">
+                <a href="tel:78632684833">+7 (863) 268-48-33</a>
+                <a href="mail:info@tesla-telecom.ru">info@tesla-telecom.ru</a>
+            </div>
+            <div class="buttons">
+                <a href="https://lk-tesla.ru/client2/index.php?r=site/login" target="_blank">Личный кабинет</a>
+                <a href="contacts.html">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="wrapper">
+            <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li class="contacts"><a href="contacts.html">Контакты</a>
+                    <div class="window">
+                        <div class="left_border">
+                            <div class="email" title="Копировать">
+                                <p>info@tesla-telecom.ru</p>
+                                <img src="img/icons/copy.png" alt="Копировать" onclick="copy1()" class="copy copy1">
+                            </div>
+                            <div class="skype" title="Копировать">
+                                <p>teslatelecomrostov</p>
+                                <img src="img/icons/copy.png" alt="Копировать" class="copy copy2" onclick="copy2()">
+                            </div>
+                            <div class="call" title="Копировать">
+                                <p>+7 (863) 268-48-33</p>
+                                <img src="img/icons/copy.png" alt="Копировать" class="copy copy3" onclick="copy3()">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="tarifs active"><a>Тарифы</a>
+
+                </li>
+                <li class="uslugi"><a href="uslugi.html">Услуги</a>
+                    <div class="window">
+                        <div class="container">
+                            <a href="uslugi.html#1" style="color: #111;">
+                            <div class="card">
+                                <img src="img/camera.png" alt="Камера" height="50">
+                                <hr>
+                                <h2>IP<br>Видеонаблюдение</h2>
+                            </div>
+                          </a>
+                          <a href="uslugi.html#5" style="color: #111;">
+                            <div class="card">
+                                <img src="img/domophone.png" alt="Домофон" height="50">
+                                <hr>
+                                <h2>IP<br>Домофоны</h2>
+                            </div>
+                          </a>
+                          <a href="uslugi.html#4" style="color: #111;">
+                            <div class="card">
+                                <img src="img/signal.png" alt="Сигнализация">
+                                <hr>
+                                <h2>Пожарная сигнализация</h2>
+                            </div>
+                          </a>
+                          <a href="uslugi.html#3" style="color: #111;">
+                            <div class="card">
+                                <img src="img/sks.png" alt="Провода">
+                                <hr>
+                                <h2>СКС</h2>
+                            </div>
+                          </a>
+                          <a href="uslugi.html#2" style="color: #111;">
+                            <div class="card">
+                                <img src="img/telephone.png" alt="Телефон" height="50">
+                                <hr>
+                                <h2>IP<br>Телефония</h2>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="connect">Подключиться
+                    <div class="window">
+                        <a href="#" class="button" onclick="forma()">Подключиться</a>
+                        <h3>ИЛИ</h3>
+                        <a href="#" class="request">Оставить заявку</a>
+                    </div>
+                </li>
+                <li class="about"><a href="about.html">О нас</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="article-tarifs">
+      <div class="yf">
+        <div class="left_block">
+          <img src="img/hands.png" alt="рукопожатие">
+        </div>
+        <div class="right_block">
+          <h2>ЮРИДИЧЕСКИМ ЛИЦАМ</h2>
+          <p>Tesla-Telecom - телекоммуникационная компания основным направлением которой является охват
+            сектора <span class="important">B2B</span>.
+            <br>Предлагаем Вашей организации:<br>
+            <br>- выгодную линейку тарифов для бизнеса;
+            <br>- наши менеджеры подберут для вас оптимальный тарифный план согласно целям вашей организации;
+            <br>- качественный канал связи и круглосуточный сервис;
+            <br>- высокое качество обслуживания;
+            <br>- быстрое реагирование на любую возникшую проблему с каналом связи;
+            <br>- локализация любой возникающей проблемы с каналом связи и последующее его восстановление, занимает максимально короткие сроки;
+            <br>- выгодные тарифы междугородней и международной связи.
+            <br><br> Свяжитесь с нами удобным для Вас способом и мы предоставим Вам полную информацию, по всем интересующим Вас вопросам.</p>
+        </div>
+      </div>
+      <div class="pf">
+        <a name="pf"></a>
+        <div class="left_block">
+          <img src="img/notebook.png" alt="ноутбук">
+        </div>
+        <div class="right_block">
+          <h2>ФИЗИЧЕСКИМ ЛИЦАМ</h2>
+          <div class="tarifs_block">
+            <div class="tarif">
+              <h3>OPTIMA</h3>
+              <div class="price">650 <span>руб</span></div>
+              <div class="info info2">Безлимит</div>
+              <div class="info">20 Мбит/с</div>
+              <a href="#" class="btn" onclick="forma()">Подключить</a>
+            </div>
+            <div class="tarif">
+              <h3>GAMMA</h3>
+              <div class="price">600 <span>руб</span></div>
+              <div class="info info2">Безлимит</div>
+              <div class="info">15 Мбит/с</div>
+              <a href="#" class="btn" onclick="forma()">Подключить</a>
+            </div>
+            <div class="tarif">
+              <h3>ALFA</h3>
+              <div class="price">500 <span>руб</span></div>
+              <div class="info info2">Безлимит</div>
+              <div class="info">10 Мбит/с</div>
+              <a href="#" class="btn" onclick="forma()">Подключить</a>
+            </div>
+            <p class="important">Мы подключим там, где прокладка кабеля не возможна.<br><br>Настройка абонентского роутера (при условии корректной работы).</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="wall displaynone"></div>
+    <div class="dialog form">
+  <img src="img/close.png" class="close" onclick="closeForm()">
+  <input class="name" placeholder="Имя *">
+  <input class="email" placeholder="Email *">
+  <input class="address" placeholder="Адрес подключения *">
+  <input class="number" placeholder="Телефон">
+  <input class="submit" type="submit" value="Отправить">
+</div>
+<footer>
+  ©Tesla-Telecom 2014-2020
+  <br>
+  info@tesla-telecom.ru
+</footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

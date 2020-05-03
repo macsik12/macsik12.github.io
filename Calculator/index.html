@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid silver;
+            border-spacing: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .buttons td {
+            background-color: #333;
+            color: #eee;
+            padding: 20px 30px;
+            font-size: 28px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .expression td {
+            background-color: #555;
+            padding: 10px;
+            padding-left: 5px;
+            padding-right: 20px;
+            font-size: 24px;
+            color: #bbb;
+            text-align: right;
+            height: 30px;
+        }
+        .result td {
+            background-color: #565;
+            padding: 15px;
+            padding-left: 5px;
+            padding-right: 20px;
+            font-size: 29px;
+            color: #fff;
+            text-align: right;
+            height: 40px;
+        }
+        td[type='number'], td[type='dot'] {
+            background-color: #444;
+        }
+        .buttons td:hover {
+            background-color: #555;
+        }
+        .buttons ::selection {
+            background-color: #333;
+        }
+        td[type='equal']:hover {
+            background-color: rgb(23, 177, 23);
+        }
+        td[type='ac']:hover {
+            background-color: rgb(130, 10, 10);
+        }
+        td[type='ac']:hover {
+            background-color: rgb(80, 10, 10);
+        }
+    </style>
+</head>
+<body>
+    <table id="calculator">
+        <tr class="expression">
+            <td colspan="5" id="expression"></td>
+        </tr>
+        <tr class="result">
+            <td colspan="5" id="result"></td>
+        </tr>
+        <tr class="buttons">
+            <td type='number'>7</td>
+            <td type='number'>8</td>
+            <td type='number'>9</td>
+            <td type='operator'>-</td>
+            <td type='operator'>÷</td>
+        </tr>
+        <tr class="buttons">
+            <td type='number'>4</td>
+            <td type='number'>5</td>
+            <td type='number'>6</td>
+            <td type='operator'>+</td>
+            <td type='operator'>×</td>
+        </tr>
+        <tr class="buttons">
+            <td type='number'>1</td>
+            <td type='number'>2</td>
+            <td type='number'>3</td>
+            <td type='equal'>=</td>
+            <td type='backspace'>⇐</td>
+        </tr>
+        <tr class="buttons">
+            <td type='number' colspan="3">0</td>
+            <td type='ac' rowspan="2">AC</td>
+            <td type='ce' rowspan='2'>CE</td>
+        </tr>
+        <tr class="buttons">
+            <td type='dot' colspan="3">.</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор НОД и НОК</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="result_block">
+        <span class="label">НОД</span><span class="result_nod" id="result_nod"></span><br><br>
+        <span class="label">НОК</span><span class="result_nok" id="result_nok"></span><br>
+    </div>
+    <div class="control">
+        <button id="calc_btn">Расчитать</button>
+        <button id="delete_last">Удалить последний</button>
+        <button id="delete_all">Очистить всё</button>
+        <div class="message" id="message">Запущено</div>
+    </div>
+    <div class="add_block control">
+        <input type="text" placeholder="37..." id="number_inp">
+        <button id="add_btn">Добавить</button>
+    </div>
+    <div class="numbers">
+        <ul class="numbers-list" id="number-list">
+
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

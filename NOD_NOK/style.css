@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.result_block {
+    color: #eee;
+    font-size: 22px;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: rgb(37, 107, 16);
+    width: 40%;
+    box-shadow: 0 0 30px 5px  rgb(37, 107, 16);
+    padding: 20px;
+    border: 20px inset rgb(136, 134, 134);
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 1px -1px 0 0 rgb(134, 129, 129),2px -2px 0 0 rgb(119, 116, 116),3px -3px 0 0 rgb(100, 100, 100),4px -4px 0 0 rgb(100, 100, 100),5px -5px 0 0 rgb(100, 100, 100),6px -6px 0 0 rgb(100, 100, 100),7px -7px 0 0 rgb(100, 100, 100),8px -8px 0 0 rgb(100, 100, 100),9px -9px 0 0 rgb(102, 99, 99),10px -10px 0 0 rgb(100, 100, 100);
+}
+
+
+.result_block .label {
+    background-color: rgb(42, 143, 11);
+    padding: 4px;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 10px;
+}
+
+.control {
+    background-color: rgb(131, 131, 131);
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px -1px 0 0 rgb(134, 129, 129),2px -2px 0 0 rgb(119, 116, 116),3px -3px 0 0 rgb(100, 100, 100),4px -4px 0 0 rgb(100, 100, 100),5px -5px 0 0 rgb(100, 100, 100),6px -6px 0 0 rgb(100, 100, 100),7px -7px 0 0 rgb(100, 100, 100),8px -8px 0 0 rgb(100, 100, 100),9px -9px 0 0 rgb(102, 99, 99),10px -10px 0 0 rgb(100, 100, 100);
+}
+
+.control button {
+    width: 50%;
+    font-family: 'Press Start 2P';
+    padding: 5px;
+    background-color: rgb(172, 155, 155);
+    border: 4px outset grey;
+    color: #444;
+}
+
+.control button:not(:first-child) {
+    margin-top: 10px;
+}
+
+.control button:active {
+    background-color: rgb(145, 126, 126);
+    border: 4px inset grey;
+    color: #222;
+}
+
+.add_block {
+    margin-top: 30px;
+}
+
+.add_block input {
+    background-color: rgb(145, 126, 126);
+    border: 3px inset grey;
+    padding: 6px;
+    font-size: 16px;
+    font-family: 'Press Start 2P';
+    color: rgb(70, 61, 61);
+}
+
+.control .message {
+    width: 50%;
+    background-color: rgb(41, 153, 41);
+    margin-top: 10px;
+    padding: 7px;
+    text-align: center;
+    border: 3px inset rgb(112, 112, 112);
+    font-family: 'Press Start 2P';
+    color: #ddd;
+    height: 40px;
+}
+
+.numbers {
+    background-color: rgb(131, 131, 131);    
+    box-shadow: 1px -1px 0 0 rgb(134, 129, 129),2px -2px 0 0 rgb(119, 116, 116),3px -3px 0 0 rgb(100, 100, 100),4px -4px 0 0 rgb(100, 100, 100),5px -5px 0 0 rgb(100, 100, 100),6px -6px 0 0 rgb(100, 100, 100),7px -7px 0 0 rgb(100, 100, 100),8px -8px 0 0 rgb(100, 100, 100),9px -9px 0 0 rgb(102, 99, 99),10px -10px 0 0 rgb(100, 100, 100);
+    width: 43%;
+    height: 1000px;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.numbers-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 107, 16);
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 90%;
+    color: #eee;
+    font-size: 22px;
+    font-family: 'Press Start 2P', sans-serif;
+    border: 6px inset rgb(124, 116, 116);
+}
+

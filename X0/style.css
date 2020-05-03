@@ -1,0 +1,41 @@
+#table {
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid silver;
+    padding: 50px;
+}
+
+.x {
+    background: url(x.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+
+.o {
+    background: url(o.png) no-repeat center center;
+    background-size: 80% 80%;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#message {
+    color: lime;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+#replay {
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: aqua;
+    display: none;
+}

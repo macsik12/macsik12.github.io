@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla-Telecom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/carousel.css">
+    <script type="text/javascript" src="js/simplycarousel.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="img/logo.png" alt="Логотип" class="logo-img">
+            </div>
+            <div class="slogan">
+                <p>Ваш ГИД В Мир IT Технологий</p>
+            </div>
+            <div class="contacts">
+                <a href="tel:78632684833">+7 (863) 268-48-33</a>
+                <a href="mail:info@tesla-telecom.ru">info@tesla-telecom.ru</a>
+            </div>
+            <div class="buttons">
+                <a href="https://lk-tesla.ru/client2/index.php?r=site/login" target="_blank">Личный кабинет</a>
+                <a href="contacts.html">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="wrapper">
+            <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li class="contacts"><a href="contacts.html">Контакты</a>
+                    <div class="window">
+                        <div class="left_border">
+                            <div class="email" title="Копировать">
+                                <p>info@tesla-telecom.ru</p>
+                                <img src="img/icons/copy.png" alt="Копировать" onclick="copy1()" class="copy copy1">
+                            </div>
+                            <div class="skype" title="Копировать">
+                                <p>teslatelecomrostov</p>
+                                <img src="img/icons/copy.png" alt="Копировать" class="copy copy2" onclick="copy2()">
+                            </div>
+                            <div class="call" title="Копировать">
+                                <p>+7 (863) 268-48-33</p>
+                                <img src="img/icons/copy.png" alt="Копировать" class="copy copy3" onclick="copy3()">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="tarifs"><a href="tarifs.html">Тарифы</a>
+                  <div class="window">
+                      <div class="container">
+                        <a style="color:black" href="tarifs.html#yf">
+                          <div class="card card1">
+                              <img src="img/manwith.png" alt="Юридическое лицр">
+                              <hr>
+                              <h2>Юр. Лицам</h2>
+                              <p class="hide">Все тарифы безлиминтные</p>
+                          </div>
+                        </a>
+                        <a style="color:black" href="tarifs.html#pf">
+                          <div class="card card2">
+                              <img src="img/manwithout.png" alt="Физическое лицр">
+                              <hr>
+                              <h2>Физ. Лицам</h2>
+                              <p class="hide">Все тарифы безлиминтные</p>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+                </li>
+                <li class="uslugi active">Услуги
+                </li>
+                <li class="connect">Подключиться
+                    <div class="window">
+                        <a href="#" class="button" onclick="forma()">Подключиться</a>
+                        <h3>ИЛИ</h3>
+                        <a href="#" class="request">Оставить заявку</a>
+                    </div>
+                </li>
+                <li class="about"><a href="about.html">О нас</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="article-tarifs article-uslugi">
+
+      <div class="yf">
+          <a name="1"></a>
+        <div class="left_block">
+
+          <img src="img/ipv.png" alt="видеокамера">
+        </div>
+        <div class="right_block">
+          <p>Профессиональный монтаж и настройка систем IP-видеонаблюдения от Tesla-Telecom любой сложности и конфигурации с возможностью удаленного слежения через интернет. Вы всегда сможете наблюдать на Вашем компьютере или смартфоне за тем, что происходит дома или на Вашем предприятии находясь за сотни или даже тысячи километров от них.</p>
+          <img src="img/videocamera.png" alt="видеокамера">
+
+        </div>
+      </div>
+      <div class="yf">
+        <a name="2"></a>
+        <div class="left_block">
+          <img src="img/iptel.png" alt="телефония">
+        </div>
+        <div class="right_block">
+          <p>Tesla-Telecom, являясь официальным представителем MCN Telecom при партнерской программе, предлагает выгодные тарифные планы междугородней и международной связи, как стационарного типа, так и подвижной радиотелефонной (мобильной) связи. Также предоставляем возможность реализации виртуальной АТС, подключения виртуальных номеров 8800, красивых и многоканальных номеров IP-телефонии.</p>
+          <img src="img/tele.png" alt="телефония">
+        </div>
+      </div>
+      <div class="yf">
+        <a name="3"></a>
+        <div class="left_block">
+          <img src="img/sks3.png" alt="скс">
+        </div>
+        <div class="right_block">
+          <p>Специалисты нашей организации имеют большой опыт по прокладке и качественному монтажу волоконно - оптических линий связи (ВОЛС), монтажу и настройке СКС – структурированных кабельных систем. В случае потребности IT сопровождения для Вашего предприятия, мы готовы предоставить высококвалифицированную поддержку и организацию автоматического мониторинга для важных областей Вашей IT инфраструктуры.</p>
+          <img src="img/sks-min.png" alt="скс">
+        </div>
+      </div>
+      <div class="yf">
+        <a name="4"></a>
+        <div class="left_block">
+          <img src="img/fire2.png" alt="пожарная сигнализация">
+        </div>
+        <div class="right_block">
+          <p>Наши специалисты подготовят проект и выполнят для Вашего предприятия, дома или офиса качественный монтаж и настройку охранно-пожарной сигнализации и автоматических систем пожаротушения, а также дальнейшее обслуживание и профилактику систем оповещения. Если Вас заинтересовали наши услуги, Вы можете обратиться по контактам, указанным на сайте. Мы всегда готовы ответить на все интересующие Вас вопросы.</p>
+          <img src="img/fire.png" alt="пожарная сигнализация" id="fire">
+        </div>
+      </div>
+      <div class="yf" style="border: 0">
+        <a name="5"></a>
+        <div class="left_block">
+          <img src="img/domop.png" alt="домофон">
+        </div>
+        <div class="right_block">
+          <p>Вы ценитель своего времени, современных систем контроля доступа и безопасности? Возможно, Вас заинтересуют новейшие модели IP-видеодомофонов с функцией удаленного вызова и системой отпирания замка двери и все это при помощи предустановленного приложения на Вашем смартфоне! Наши специалисты имеют многолетний опыт монтажа и настройки подобных систем. Свяжитесь с нами по любому из контактов, указанных на сайте и наши менеджеры ответят на интересующие Вас вопросы.</p>
+          <img src="img/domophone2.png" alt="домофон" id="domophone">
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="wall displaynone"></div>
+    <div class="dialog form">
+  <img src="img/close.png" class="close" onclick="closeForm()">
+  <input class="name" placeholder="Имя *">
+  <input class="email" placeholder="Email *">
+  <input class="address" placeholder="Адрес подключения *">
+  <input class="number" placeholder="Телефон">
+  <input class="submit" type="submit" value="Отправить">
+</div>
+<footer>
+  ©Tesla-Telecom 2014-2020
+  <br>
+  info@tesla-telecom.ru
+</footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
