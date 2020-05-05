@@ -65,9 +65,17 @@ let Chat = {
 }
 
 send_btn.addEventListener('click', function() {
-    Controll.sendMessage('Я', text_inp.value, 'me')
+    Controll.sendMessage('Я', text_inp.value, 'me');
+    text_inp.focus();
 });
 
+text_inp.addEventListener('keypress', function(e) {
+    if(e.keyCode == 13) {
+        Controll.sendMessage('Я', text_inp.value, 'me');
+        text_inp.focus();
+        reRenderInput();
+    }
+})
 
 function reRenderInput() {
     if(text_inp.value.length == 0) {
@@ -77,8 +85,8 @@ function reRenderInput() {
     }
 }
 
-text_inp.oninput = reRenderInput;
-send_btn.addEventListener('click', reRenderInput)
+text_inp.addEventListener('input', reRenderInput);
+send_btn.addEventListener('click', reRenderInput);
 console.log(text_inp)
 
 let Controll = {
