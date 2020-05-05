@@ -90,6 +90,7 @@ header h1 {
     font-size: 20px;
     padding-left: 28px;
     color: #bab;
+    outline: none;
 }
 
 .sender .send {
