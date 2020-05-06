@@ -4,8 +4,9 @@ let messages_block = document.getElementById('messages');
 let blackcheck = document.getElementById('blackbox');
 let all_messages = document.getElementsByClassName('chip');
 let contextMenu = document.getElementById('contextMenu');
-
+if(device.desktop()) {
 document.body.style.overflow = 'hidden';
+}
 let context_delete = document.getElementById('context_delete');
 let pastChip = document.createElement('div');
 
