@@ -136,7 +136,14 @@ function reRenderInput() {
 
 blackcheck.addEventListener('click', function() {
     if(blackcheck.checked == true) {
-        
+        document.querySelector('header').style.background = 'rgb(65, 50, 50)';
+        document.querySelector('header').style.borderLeftColor = 'rgb(82, 60, 60)';
+        document.querySelector('header h1').style.color = '#ddd';
+        document.querySelector('header p').style.color = '#eee';
+        document.querySelector('body').style.background = 'rgb(37, 29, 29)';
+        document.querySelector('.sender').style.background = 'rgb(37, 29, 29)';
+        text_inp.style.background = 'rgb(65, 50, 50)';
+        text_inp.style.color = '#bab';
     } else {
         document.querySelector('header').style.background = 'rgb(210,210,210)';
         document.querySelector('header').style.borderLeftColor = 'rgb(180,180,180)';
@@ -144,8 +151,8 @@ blackcheck.addEventListener('click', function() {
         document.querySelector('header p').style.color = '#333';
         document.querySelector('body').style.background = '#eee';
         document.querySelector('.sender').style.background = '#bbb';
-        text_inp.style.background = '#ddd'
-        text_inp.style.color = '#000'
+        text_inp.style.background = '#ddd';
+        text_inp.style.color = '#000';
     }
 })
 
@@ -223,3 +230,16 @@ messages_block.addEventListener('click', function() {
     pastChip.style.backgroundColor = 'rgb(67, 73, 65)';
 })
 
+setInterval(function() {
+    let chance = Math.floor(Math.random() * 3);
+                    console.log(chance)
+                    
+                    if(chance) {
+                        for(let i = 0; i < chance; i++) {
+                            setTimeout(function() {
+                                Chat.addMessage(randomName(), randomPhrase(), 'notme')
+                                window.scrollBy(0,1000000)
+                            },Math.floor(Math.random() * 4000));
+                        }
+                    }
+}, 30000)
