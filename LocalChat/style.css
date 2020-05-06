@@ -21,12 +21,23 @@ header {
     border-left: 20px solid rgb(82, 60, 60);
     position: fixed;
     width: 100%;
+    display: flex;
 }
 
 header h1 {
     color: #ddd;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+}
+
+header #blackbox {
+    margin-left: auto;
+}
+
+header p {
+    margin-left: 10px;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .messages {
@@ -100,4 +111,24 @@ header h1 {
     margin-left: 10px;
     background: url(images/send.png) no-repeat center center;
     background-size: 110% 110%;
+}
+
+
+#contextMenu {
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
+    display: none;
+}
+
+#contextMenu p {
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+#contextMenu p:hover {
+    background-color: #555;
 }
