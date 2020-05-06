@@ -45,14 +45,21 @@ header p {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .messages .chip {
     background-color: rgb(67, 65, 73);
-    max-width: 30%;
     border-radius: 0 10px 10px 10px;
     margin-top: 20px;
     padding: 10px;
+    display: inline-block;
+    max-width: 30%;
+}
+
+.messages .chip.notme {
+    margin-right: auto;
 }
 
 .messages .chip h2 {
@@ -60,19 +67,23 @@ header p {
     font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
+    display: block;
 }
 
 .messages .chip .message {
     color: #eee;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 3px;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 
 .chip .time {
     color: #bab;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
 }
 
 .messages .chip.me {
@@ -80,6 +91,11 @@ header p {
     border-radius: 10px 0 10px 10px;
     margin-left: auto;
     text-align: right;
+}
+
+.messages .chip.me .time {
+    margin-left: 0;
+    margin-right: 10px;
 }
 
 .sender {
