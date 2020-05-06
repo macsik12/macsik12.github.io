@@ -53,6 +53,18 @@ let Chat = {
             </div>`);
         }
         Controll.reRenderMessagesContext();
+        
+let mchips = document.querySelectorAll('.messages .chip')
+
+if(device.mobile()) {
+    for(let chip of mchips) {
+        chip.style.maxWidth = '80%';
+    }
+} else {
+    for(let chip of mchips) {
+        chip.style.maxWidth = '40%';
+    }
+}
     },
     reRender() {
         messages_block.innerHTML = '';
@@ -78,6 +90,18 @@ let Chat = {
             </div>`);
         }
         Controll.reRenderMessagesContext();
+        
+let mchips = document.querySelectorAll('.messages .chip')
+
+if(device.mobile()) {
+    for(let chip of mchips) {
+        chip.style.maxWidth = '80%';
+    }
+} else {
+    for(let chip of mchips) {
+        chip.style.maxWidth = '40%';
+    }
+}
     },
     deleteMessage(index) {
         this.messages.splice(index, 1);
@@ -198,8 +222,4 @@ messages_block.addEventListener('click', function() {
     contextMenu.style.display = 'none';
     pastChip.style.backgroundColor = 'rgb(67, 73, 65)';
 })
-
-
-
-
 
