@@ -49,7 +49,7 @@ let Chat = {
             messages_block.insertAdjacentHTML('beforeend', `<div class="chip notme">
             <h2 class="name">${name}</h2>
             <p class="message">${message}</p>
-            <p class="time">${data.getHours()}:${data.getMinutes()}</p>
+            <p class="time">${data.getHours()}:${String(data.getMinutes()).padStart(2, '0')}</p>
             </div>`);
         }
         Controll.reRenderMessagesContext();
