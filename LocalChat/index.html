@@ -9,6 +9,8 @@
 <body>
     <header>
         <h1>Локальный чат</h1>
+        <input type="checkbox" id="blackbox" checked>
+        <p>Темная тема</p>
     </header>
     <main class="messages" id="messages">
         
@@ -16,6 +18,9 @@
     <div class="sender">
         <input type="text" placeholder="Введите сообщение" id="text_input">
         <div class="send" id="send_button"></div>
+    </div>
+    <div id="contextMenu">
+        <p id="context_delete">Удалить</p>
     </div>
     <script src="script.js"></script>
 </body>
