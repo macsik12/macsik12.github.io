@@ -5,7 +5,7 @@ let blackcheck = document.getElementById('blackbox');
 let all_messages = document.getElementsByClassName('chip');
 let contextMenu = document.getElementById('contextMenu');
 
-
+document.body.style.overflow = 'hidden';
 let context_delete = document.getElementById('context_delete');
 let pastChip = document.createElement('div');
 
@@ -244,4 +244,18 @@ setInterval(function() {
                     }
 }, 30000)
 
-console.log(document.styleSheets)
+window.addEventListener('wheel', function(e) {
+    if(e.deltaY == 3 && e.altKey) {
+        this.window.scrollBy(0, 80);
+    }
+    if(e.deltaY == -3 && e.altKey) {
+        this.window.scrollBy(0, -80);
+    }
+    if(e.deltaY == 3) {
+        window.scrollBy(0, 50);
+    }
+    if(e.deltaY == -3) {
+        window.scrollBy(0, -50);
+    }
+    
+})
