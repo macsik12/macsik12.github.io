@@ -79,7 +79,7 @@ function refreshTasksEvents() {
             if(task.editing == false) {
                 list.splice(i, 1);
                 task.children[1].className = 'strike';
-                task.children[0].style.backgroundColor = 'red';
+                task.children[0].style.backgroundColor = 'rgb(88, 130, 81)';
                 setTimeout(function() {
                     task.remove();
                 }, 1000)
