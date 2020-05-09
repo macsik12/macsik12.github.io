@@ -86,6 +86,11 @@ function refreshTasksEvents() {
             }
             
         }
+
+        task.children[2].onclick = function(e) {
+            list.splice(i, 1);
+            task.remove();
+        }
         i++;
     }
 }
@@ -119,7 +124,7 @@ addButton.addEventListener('click', function() {
 
 function addTodo() {
     let li = document.createElement('li');
-    li.innerHTML = `<div class="checker"></div><input>`;
+    li.innerHTML = `<div class="checker"></div><input maxlength="86"><div class="delete"></div>`;
     li.className = 'task';
     li.editing = true;
     ul.append(li);
