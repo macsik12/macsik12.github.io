@@ -1,0 +1,141 @@
+body {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+* {
+    outline: none;
+}
+
+body, html {
+    height: 99.1%;
+}
+
+.toolbar {
+    height: 100px;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bottombar {
+    height: 30px;
+    background-color: #555;
+    margin-top: auto;
+}
+
+.canvas {
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: crosshair;
+    width: 45%;
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+}
+
+.row .pixel {
+    background-color: #fff;
+
+}
+
+.button {
+    border: 0;
+    padding: 9px;
+    text-transform: uppercase;
+    background-color: #999;
+    color: #eee;
+}
+
+.sizes {
+    margin-left: 2px;
+}
+
+.sizes input {
+    background-color: #999;
+    color: #eee;
+    border: 0;
+    padding: 4px;
+    height: 40px;
+}
+
+.sizes input:first-child {
+    margin-bottom: 2px;
+}
+
+.colorBlock {
+    margin-left: 10px;
+    background-color: #999;
+    padding: 5px;
+}
+
+.colorBlock input {
+    border: 0;
+   /* background-color: #00000000;*/
+    background-color: #red;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 35px;
+}
+
+.tools {
+    display: flex;
+    margin-left: 5px;
+}
+
+.tools button {
+    border: 0;
+    padding: 3px 10px;
+    background-color: #999;
+    color: #eee;
+}
+
+.tools button:first-child {
+    margin-bottom: 4px;
+}
+
+.tools button.selected {
+    background-color: #bbb;
+}
+
+.tools > div {
+    width: 100px;
+    margin-left: 5px;
+}
+
+.tools > div > * {
+    width: 100%;
+}
+
+.bottombar {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    color: #eeeeee;
+}
+
+.colorHistory {
+    height: 40%;
+    width: 272px;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.clr {
+    width: 24px;
+    margin-left: 10px;
+    height: 24px;
+
+    cursor: pointer;
+}
