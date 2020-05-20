@@ -9,6 +9,17 @@ function copy2() {
 function copy3() {
   navigator.clipboard.writeText('78632684833')
 }
+if(document.body.clientWidth < 800) {
+    console.log('sdfdsfsfgsfgsd')
+    $('.connect').attr('onclick', 'forma()');
+    $('.connect').css('cursor', 'pointer')
+}
+
+let footer = document.querySelector('footer');
+
+if(device.mobile()) footer.remove();
+
+console.log(device.mobile())
 
 var dialog = $('.dialog');
 var cite = $('.wrapper');
@@ -43,7 +54,5 @@ function showSlides() {
   setTimeout(showSlides, 9000); // Change image every 2 seconds
 } 
 
-if(document.body.clientWidth < 800) {
-  $('.connect').attr('onclick', 'forma()');
-  $('.connect').css('cursor', 'pointer')
-}
+
+

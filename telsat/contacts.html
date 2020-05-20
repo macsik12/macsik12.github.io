@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/carousel.css">
-    <script type="text/javascript" src="js/simplycarousel.js">
-
-    </script>
+    <script type="text/javascript" src="js/simplycarousel.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Tesla-Telecom это команда профессионалов сочитающая в себе многолетний опыт в сфере телекомуникаций и IT-технологий. Нашей основной задачей является поддержка качества предоставляемых услуг сявзи и максимальный охват В2В сектора, а также социально значимых объектов. Для постороения и развития отказоустойчевой сети связи, мы используем оборудование ведущих мировых брендов. Среди наших абонентов есть крупные компании, для которых устойчивый доступ к сети интернет является важной частью бизнес процесса поэтому локализация любой возникающей проблемы с каналом связи и последующее его восстановление занимает максимально короткие сроки.
+Tesla-Telecom станет правильным выбором для Вашего бизнеса.">
+    <meta name="keywords" content="интернет, Батайск, провайдер, Ростов, Ростов-на-Дону, wi-fi, подключить, подключиться, тэсла, тесла, tesla, tesla-telecom, видеонаблюдение, ip телефония, телефония, домофоны,ip видеодомофоны, пожарная сигнализация, скс">
 </head>
 <body>
   <div class="wrapper">
@@ -24,7 +25,7 @@
             </div>
             <div class="contacts">
                 <a href="tel:78632684833">+7 (863) 268-48-33</a>
-                <a href="mail:info@tesla-telecom.ru">info@tesla-telecom.ru</a>
+                <a href="mailto:info@tesla-telecom.ru">info@tesla-telecom.ru</a>
             </div>
             <div class="buttons">
                 <a href="https://lk-tesla.ru/client2/index.php?r=site/login" target="_blank">Личный кабинет</a>
@@ -130,17 +131,20 @@
     <div class="wall displaynone"></div>
     <div class="dialog form">
   <img src="img/close.png" class="close" onclick="closeForm()">
-  <input class="name" placeholder="Имя *">
-  <input class="email" placeholder="Email *">
-  <input class="address" placeholder="Адрес подключения *">
-  <input class="number" placeholder="Телефон">
-  <input class="submit" type="submit" value="Отправить">
+        <form action="mail.php" method="POST">
+            <input class="name" name="name" placeholder="Имя/Название организации *">
+            <input class="email" name="email" placeholder="Email *">
+            <input class="address" name="address" placeholder="Адрес подключения *">
+            <input class="number" name="number" placeholder="Телефон">
+            <input class="submit" type="submit" value="Отправить">
+        </form>
 </div>
 <footer>
   ©Tesla-Telecom 2014-2020
   <br>
   E-mail: info@tesla-telecom.ru
 </footer>
+  <script src="device.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

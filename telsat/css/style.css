@@ -565,6 +565,11 @@ html body .navigation .nav > li.active a {
   border-radius: 5px 5px 0 0;
 }
 
+
+
+
+
+
 .form input {
   padding: 15px;
   display: block;
@@ -615,6 +620,23 @@ html body .navigation .nav > li.active a {
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
+
+@media all and (max-width: 1080px) {
+    .dialog {
+        width: 115%;
+    }
+
+    .dialog input {
+        width: 75%;
+    }
+
+    .dialog:before {
+        width: 100%;
+    }
+}
+
+
+
 
 /* ARTICLE ГЛАВНАЯ */
 
@@ -840,7 +862,7 @@ html body .navigation .nav > li.active a {
 }
 
 .article-uslugi .yf {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 10px;
 }
 
@@ -1009,7 +1031,7 @@ text-shadow: 0 0 5px lime;
 .article-main {
   display: flex !important;
   width: 110%;
-  margin-top: 10px;
+  margin-top: 75px !important;
   margin-left: -5%;
 }
 
@@ -1133,8 +1155,9 @@ text-shadow: 0 0 5px lime;
     align-items: center;
   }
   .nav li {
-    width: 90%;
+    width: 100%;
     text-align: center;
+    display: block;
   }
   .navigation .nav > li:hover .window {
     display: none !important;
@@ -1186,16 +1209,16 @@ text-shadow: 0 0 5px lime;
   footer {
     background: none !important;
   }
+
+   #push_down {
+        transform: translateX(0px) !important;
+   }
+
+   #contacts {
+       background: 0;
+   }
 }
 
-@media all and (max-width: 640px) {
-  .dialog {
-    width: 90% !important;
-  }
-  .dialog:before {
-    width: 100% !important;
-  }
-}
 
 @media all and (max-width: 900px) {
   .yf {
@@ -1217,6 +1240,131 @@ text-shadow: 0 0 5px lime;
     margin-top: 10px;
   }
 }
+
+#push_down {
+    transform: translateX(-40px);
+}
+
+#pppp {
+    width: 82%;
+}
+
+#contacts {
+    margin-top: 75px;
+}
+
+.article.about {
+    margin-top: 75px;
+}
+
+#thankyou {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 100px;
+    background-image: url("../img/post.png");
+    background-size: 43%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-left: 7px;
+}
+
+@media all and (max-width: 900px) {
+    #thankyou {
+        background: 0;
+    }
+}
+
+#thankyou h2 {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 15px;
+    color: #222;
+    color: #2f2f2a;
+    text-shadow: 0 0 5px lime;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: text;
+    animation-name: text;
+}
+
+#thankyou .lines {
+    font-family: 'Noto Sans', sans-serif;
+    color: #333;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.about2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about2 p {
+    width: 80%;
+}
+
+@media all and (max-width: 900px) {
+    .about2 {
+        flex-direction: column;
+    }
+    .about2 p {
+        text-align: center;
+    }
+    .about2 .left {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+/* Услуги переделка  */
+
+
+.uslugi2 {
+    margin-top: 70px;
+}
+
+.uslugi2, .uslugi2 * {
+
+}
+
+.uslugi2 section {
+    display: flex;
+    align-items: center;
+}
+
+.uslugi2 section:not(:last-child) {
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.uslugi2 .leftBlock img {
+    opacity: 0.7;
+}
+
+.uslugi2 .middleBlock p {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (max-width: 900px) {
+    .uslugi2 section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .uslugi2 section .middleBlock p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
 
 
 
