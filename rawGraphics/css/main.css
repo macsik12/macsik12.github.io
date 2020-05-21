@@ -1,0 +1,1012 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* 1 Секция Header ============================= */
+
+header {
+    padding-top: 53px;
+    padding-bottom: 208px;
+    background-image: url(../images/header/bg.png);
+    background-repeat: no-repeat;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav li {
+    margin-left: 42px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #323232;
+}
+
+header nav li.contact {
+    background-color: #00b894;
+    color: #fefeff;
+    padding: 16px 37px;
+}
+
+header .content {
+    margin-top: 264px;
+}
+
+header h2 {
+    font-size: 28px;
+    font-family: 'Roboto Slab';
+    color: #323232;
+    font-weight: 500;
+}
+
+header h2 span {
+    color: #00b894;
+}
+
+header h1 {
+    font-family: 'Roboto Slab';
+    font-size: 48px;
+    font-weight: bold;
+    color: #323232;
+    margin-top: 18px;
+}
+
+header .content > p {
+    margin-top: 40px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+    max-width: 654px;
+    line-height: 30px;
+}
+
+header .content .buttons {
+    margin-top: 53px;
+}
+
+header .content .buttons > a {
+    display: inline-block;
+    padding: 17px 0;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+header .buttons .btn1 {
+    background-color: #00b894;
+}
+
+header .buttons .btn2 {
+    background-color: #323232;
+    margin-left: 30px;
+}
+
+/* Секция 2 About Me ===================================== */
+
+.aboutme {
+/*    padding-top: 177px; */
+/*    padding-bottom: 180px; */
+}
+
+.aboutme h2 {
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #323232;
+}
+
+.aboutme h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #00b894;
+    margin-top: 17px;
+}
+
+.aboutme img {
+    margin-top: 27px;
+}
+
+
+
+.aboutme h3 div.two::after {
+    width: 635px;
+}
+
+.aboutme p {
+    font-size: 15px;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    line-height: 28px;
+    color: #707070;
+    width: 694px;
+    margin-top: 50px;
+}
+
+.aboutme .container {
+    background-image: url(../images/aboutme/statistic.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-top: 177px;
+    padding-bottom: 180px;
+}
+
+/* Секция 3 Services */
+
+.services {
+    background-color: #f5f6fb;
+    padding-top: 150px;
+    padding-bottom: 116px;
+}
+
+.services h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #323232;
+}
+
+.services h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    width: 500px;
+    background-color: #ccf1ea;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.services .cards {
+    margin-top: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.services .card {
+    width: 370px;
+    height: 338px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+.services .card h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #323232;
+    margin-top: 34px;
+}
+
+.services .card p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #707070;
+    line-height: 28px;
+    margin-top: 15px;
+}
+
+/* Секция 3 Software Skills */
+
+.skills {
+    background-color: #00b894;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.skills h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.skills .bars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 81px;
+    flex-wrap: wrap;
+}
+
+.skills .bar {
+    margin-bottom: 50px;
+}
+
+.skills .bar h4 {
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.skills .bar .line {
+    width: 500px;
+    height: 5px;
+    background-color: #4dcdb4;
+    margin-top: 15px;
+}
+
+.skills .bar .fill::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+/* ПРОЦЕНТЫ */
+
+.skills .bar .fill::before {
+    content: '0%';
+    position: absolute;
+    right: -10px;
+    top: -30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.skills .bar .fill {
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* Photoshop */
+
+.skills .bar.photoshop .fill::before {
+    content: '92%';
+}
+
+.skills .bar.photoshop .fill {
+    width: 92%;
+}
+
+
+/* Illustrator */
+
+.skills .bar.illustrator .fill::before {
+    content: '85%';
+}
+
+.skills .bar.illustrator .fill {
+    width: 85%;
+}
+
+/* After Effect */
+
+.skills .bar.ae .fill::before {
+    content: '97%';
+}
+
+.skills .bar.ae .fill {
+    width: 97%;
+}
+
+/* HTML */
+
+.skills .bar.html .fill::before {
+    content: '90%';
+}
+
+.skills .bar.html .fill {
+    width: 90%;
+}
+
+/* CSS */
+
+.skills .bar.css .fill::before {
+    content: '85%';
+}
+
+.skills .bar.css .fill {
+    width: 85%;
+}
+
+/* JavaScript */
+
+.skills .bar.js .fill::before {
+    content: '72%';
+}
+
+.skills .bar.js .fill {
+    width: 72%;
+}
+
+/* КОНЕЦ ПРОЦЕНТОВ */
+
+/* 5 Секция Latest Project */
+
+.project {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.project h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.project h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    width: 235px;
+    background-color: #ccf1ea;
+    margin-top: -17px;
+}
+
+.project ul {
+    margin-top: 40px;
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    color: #707070;
+}
+
+.project ul li {
+    margin-right: 43px;
+}
+
+.project ul li.selected {
+    color: #00b894;
+}
+
+.project ul li:hover {
+    color: #00b894;
+}
+
+.project .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 59px;
+}
+
+.project .card {
+    width: 370px;
+    height: 350px;
+    background-color: #828282;
+    margin-bottom: 30px;
+}
+
+.project .card .info {
+    display: none;
+}
+
+.project .card:hover .info {
+    display: flex;
+    background-color: #e66d6d;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project .info h3 {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+}
+
+.project .info h4 {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.project .info p {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    width: 290px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+.project .info .rating {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.project .info .rating img {
+    transform: translateY(2px);
+}
+
+
+/* Feedback */
+
+.feedback {
+    padding-bottom: 150px;
+}
+
+.feedback h2 {
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 48px;
+    color: #323232;
+    text-align: center;
+}
+
+.feedback h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    width: 370px;
+    background-color: #ccf1ea;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.feedback .container {
+    padding: 0 15px;
+}
+
+.feedback .feedbacks {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feedbacks .client {
+    width: 535px;
+    border: 1px solid #e5e5e5;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+}
+
+.feedback .client p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #707070;
+    line-height: 30px;
+    margin-top: 13px;
+}
+
+.feedback .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.feedback .person .avatar {
+    width: 70px;
+    height: 70px;
+    background-color: #828282;
+    border-radius: 50%;
+}
+
+.feedback .person .names {
+    display: flex;
+    align-items: center;
+}
+
+.feedback .avatar {
+    margin-right: 13px;
+}
+
+.feedback .person .name {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #707070;
+}
+
+.feedback .person .info {
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    font-size: 15px;
+    color: #707070;
+
+}
+
+
+/* Contact Us */
+
+.contact_block {
+    background-image: linear-gradient(to right, #929292 46%, #fff 46%);
+    display: flex;
+    padding-bottom: 52px;
+}
+
+.contact_block .inner {
+    margin-left: auto;
+    width: 54%;
+    padding-left: 100px;
+    padding-right: 15px;
+    padding-top: 52px;
+}
+
+.contact_block h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #323232;
+}
+
+.contact_block h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #00b894;
+    margin-top: 13px;
+}
+
+.contact_block img {
+    margin-top: 30px;
+}
+
+.contact_block form {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact_block form > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact_block form > div input {
+    width: 270px;
+    border: 1px solid #e5e5e5;
+}
+
+.contact_block form textarea {
+    margin-top: 30px;
+    border: 1px solid #e5e5e5;
+}
+
+.contact_block form textarea, .contact_block form input {
+    padding: 16px 19px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact_block form textarea::placeholder, .contact_block form input::placeholder {
+    color: #707070;
+}
+
+.contact_block form .submit {
+    margin-top: 30px;
+    width: 156px;
+    height: 45px;
+    padding: 0;
+    border: 0;
+    background-color: #00b894;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact_block form .submit:hover {
+    background-color: #0ecea7;
+}
+
+
+/* Latest News */
+
+.news_block {
+    padding-top: 140px;
+}
+
+.news_block h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #323232;
+    text-align: center;
+}
+
+.news_block .news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 67px;
+}
+
+.news_block .new {
+    width: 360px;
+}
+
+.news_block .content {
+    padding-left: 23px;
+    padding-right: 23px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.news_block .picture {
+    height: 300px;
+    width: 100%;
+    background-color: #929292;
+}
+
+.news_block .row1 {
+    display: flex;
+    justify-content: space-between;
+    color: #707070;
+    font-size: 15px;
+    font-family: 'PT Sans', serif;
+    font-weight: 500;
+}
+
+.news_block .row1 > * {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 22px;
+}
+
+.news_block .author {
+    background-image: url(../images/news/person.png);
+}
+
+.news_block .date {
+    background-image: url(../images/news/date.png);
+}
+
+.news_block h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #323232;
+    margin-top: 32px;
+}
+
+.news_block p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: #707070;
+    line-height: 28px;
+    margin-top: 16px;
+}
+
+.news_block .continue {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #707070;
+    display: block;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.news_block .active {
+    font-weight: bold;
+}
+
+/* Logos */
+
+
+.logos {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.logos .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f5f6fb;
+    padding-top: 80px;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+footer .content h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #323232;
+    margin-top: 10px;
+}
+
+footer .col1 p {
+    margin-top: 30px;
+    width: 287px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #707070;
+    line-height: 28px;
+}
+
+footer .content ul {
+    list-style-type: none;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 34px;
+    margin-top: 15px;
+}
+
+footer .content ul a {
+    text-decoration: none;
+    color: #707070;
+}
+
+footer .col4 input.text {
+    height: 45px;
+    width: 248px;
+    padding-left: 18px;
+    border: 1px solid #dcdde1;
+    border-right: 0;
+}
+
+footer .col4 input.text::placeholder {
+    color: #707070;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+}
+
+footer .col4 input.submit {
+    height: 45px;
+    width: 45px;
+    border: 0;
+    background-color: #00b894;
+    margin-left: -4px;
+    background-image: url(../images/footer/send.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer .col4 input.submit:hover {
+    background-color: #4bccb2;
+}
+
+footer .send {
+    margin-top: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    border-top: 1px solid #dcdde1;
+}
+
+footer .footer .cr {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #707070;
+}
+
+.footer .payment {
+    display: flex;
+    align-items: center;
+}
+
+.footer .payment span {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #707070;
+}
+
+.footer .payment img {
+    margin-left: 10px;
+}
+
+
+
+
+/* ============================================================
+        АДАПТАЦИЯ
+====================================================== */
+
+@media all and (max-width: 1182px) {
+    .container {
+        padding: 0 50px
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 728px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav li {
+        margin-left: 0;
+        margin-top: 18px;
+    }
+}
+
+@media all and (max-width: 1084px) {
+    .aboutme .container {
+        background: 0;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .aboutme img {
+        width: 450px;
+    }
+}
+
+@media all and (max-width: 1186px) {
+    .services .cards {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 1120px) {
+    .skills .bars {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 830px) {
+    .project ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project ul li {
+        margin: 0;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .project h2 {
+        text-align: center;
+    }
+
+    .project h2::after {
+        margin: 0 auto;
+        margin-top: -15px;
+    }
+}
+
+@media all and (max-width: 1192px) {
+    .project .projects {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 1102px) {
+    .feedback .feedbacks {
+        justify-content: space-around;
+    }
+
+    .feedback .client {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 1214px) {
+    .contact_block {
+        background: 0;
+    }
+
+    .contact_block .inner {
+        width: 100%;
+    }
+    .contact_block form > div input {
+        width: 49%;
+    }
+
+    .contact_block .inner {
+        padding-left: 30px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .contact_block img {
+        width: 400px;
+    }
+}
+
+@media all and (max-width: 1188px) {
+    .news_block .news {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news_block .news .new {
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 622px) {
+    .logos .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos .container img {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 906px) {
+    footer .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+}
