@@ -1099,3 +1099,9 @@ footer .footer .cr {
         width: 300px;
     }
 }
+
+@media all and (max-width: 458px) {
+    .news_block .news .new {
+        width: 290px;
+    }
+}
