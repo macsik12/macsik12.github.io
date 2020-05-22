@@ -1083,3 +1083,9 @@ footer .footer .cr {
         font-size: 29px;
     }
 }
+
+@media all and (max-width: 496px) {
+    .contact_block img {
+        width: 300px;
+    }
+}
