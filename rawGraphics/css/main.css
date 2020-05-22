@@ -1044,7 +1044,42 @@ footer .footer .cr {
     }
 
     .services h2::after {
-        width: 90%;
+        width: 350px;
         margin-top: -15px;
+    }
+}
+
+@media all and (max-width: 416px) {
+    .aboutme img {
+        width: 290px;
+    }
+}
+
+@media all and (max-width: 446px) {
+    .services h2 {
+        font-size: 25px;
+    }
+
+    .services h2::after {
+        width: 260px;
+        margin-top: -13px;
+    }
+}
+
+@media all and (max-width: 522px) {
+    .skills .bar .line {
+        width: 350px;
+    }
+}
+
+@media all and (max-width: 374px) {
+    .skills .bar .line {
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 428px) {
+    .skills h2 {
+        font-size: 29px;
     }
 }
