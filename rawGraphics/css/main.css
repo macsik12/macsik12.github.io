@@ -1089,3 +1089,13 @@ footer .footer .cr {
         width: 300px;
     }
 }
+
+@media all and (max-width: 408px) {
+    .feedback h2 {
+        font-size: 38px;
+    }
+
+    .feedback h2::after {
+        width: 300px;
+    }
+}
