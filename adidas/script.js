@@ -45,3 +45,25 @@ list_lang.addEventListener('click', function(event) {
         setTimeout(closeLangPanel, 0)
     }
 })
+
+
+// Боковая панель ===========================
+
+let panel = document.getElementById('menu');
+
+let openBtnMenu = document.getElementById('menuBtn');
+let closeBtnMenu = document.getElementById('close');
+
+openBtnMenu.onclick = function() {
+    panel.style.right = '0'
+}
+
+closeBtnMenu.onclick = function() {
+    panel.style.right = '-15rem'
+}
+
+panel.onclick = function(event) {
+    if(event.target.tagName == 'P') {
+        alert(`The ${event.target.textContent} is clicked!`)
+    }
+}
