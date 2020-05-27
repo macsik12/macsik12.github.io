@@ -33,6 +33,9 @@ document.body.addEventListener('click', function(event) {
     if(!event.target.closest('#languages_li')) {
         closeLangPanel()
     }
+    if(!event.target.closest('#menu') && !event.target.closest('#menuBtn')) {
+        panel.style.transform = 'scaleX(0)'
+    }
 })
 
 list_lang.addEventListener('click', function(event) {
@@ -55,11 +58,11 @@ let openBtnMenu = document.getElementById('menuBtn');
 let closeBtnMenu = document.getElementById('close');
 
 openBtnMenu.onclick = function() {
-    panel.style.right = '0'
+    panel.style.transform = 'scaleX(1)'
 }
 
 closeBtnMenu.onclick = function() {
-    panel.style.right = '-15rem'
+    panel.style.transform = 'scaleX(0)'
 }
 
 panel.onclick = function(event) {

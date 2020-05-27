@@ -528,7 +528,7 @@ body {
 
 #menu {
     position: absolute;
-    right: -15rem;
+    right: 0;
     bottom: 0;
     top: 0;
     background-color: #ccc;
@@ -538,6 +538,8 @@ body {
     text-align: center;
     overflow-y: auto;
     z-index: 1001;
+    transform-origin: right;
+    transform: scaleX(0);
     transition: 300ms;
 }
 
