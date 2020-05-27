@@ -403,6 +403,10 @@ body {
         margin-right: 0;
         margin-left: 0;
     }
+
+    .footer {
+        margin-top: 7em;
+    }
 }
 
 @media (max-width: 524px) {
@@ -436,6 +440,14 @@ body {
     .header .nav1 {
         margin-left: -2em;
     }
+
+    .name_block {
+        margin-bottom: 4em;
+    }
+
+    .shoe_block {
+        margin-bottom: 4em;
+    }
 }
 
 @media (max-width: 452px) {
@@ -452,4 +464,45 @@ body {
         height: 1.9em;
         font-size: 2rem;
     }
+}
+
+@media (max-width: 790px) {
+    body {
+        background-size: 0, 100%;
+    }
+}
+
+/* Начало интерактива ====================== */
+
+
+.languages_li {
+    position: relative;
+    cursor: pointer;
+}
+
+.languages_li .list {
+    position: absolute;
+    background-color: #fff;
+    top: 1.6em;
+    left: 0;
+    z-index: 1000;
+    width: 11em;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 200ms;
+}
+
+
+
+.languages_li .list p {
+    padding: 0.1em 1em;
+}
+
+.languages_li .list p.selected {
+    background-color: #ddd;
+}
+
+.languages_li .list p:hover {
+    background-color: #ddd;
+    cursor: pointer;
 }
