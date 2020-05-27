@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    font-size: 1em;
+    box-sizing: border-box;
+    --g-font: 'Poppins', sans-serif;
+    --w-light: 300;
+    --w-regular: 400;
+    --w-medium: 500;
+    --w-bold: 700;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/bglogo.png), radial-gradient(white, #efefef 70%);
+    background-repeat: no-repeat, repeat;
+    background-position: center top;
+    background-size: 70em, 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-left: 3.5em;
+    padding-right: 5.5em;
+    font-family: var(--g-font);
+    font-weight: 400;
+}
+
+.header .part {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav1, .header .nav2 {
+    list-style-type: none;
+    display: flex;
+}
+
+.header .nav1 {
+    margin-left: 2.5em;
+}
+
+.header .nav1 li {
+    margin-right: 2.7em;
+    text-transform: uppercase;
+}
+
+.header .nav1 a {
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.header .nav2 li {
+    margin-right: 3em;
+    text-transform: uppercase;
+}
+
+.header .nav2 a {
+    text-decoration: none;
+    color: #313131;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    width: 7em;
+}
+
+/* Превью обуви ========================= */
+
+.main {
+    margin-top: auto;
+}
+
+.shoe_block {
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.shoe_block .shoe img {
+    width: 45em;
+    margin-right: -60px;
+}
+
+.shoe_block .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2.5em;
+    padding-top: 1em;
+}
+
+.shoe_block > * {
+    flex: 1;
+}
+
+.shoe_block .info .price {
+    font-size: 7.6rem;
+    font-family: var(--g-font);
+    font-weight: 300;
+    height: 1.2em;
+}
+
+.shoe_block .info .wallet {
+    font-size: 3.5rem;
+}
+
+.shoe_block .info .label {
+    font-family: var(--g-font);
+    font-weight: 500;
+    text-align: right;
+    line-height: 1.2;
+    margin-right: 0.6em;
+    text-transform: uppercase;
+}
+
+.shoe_block .color {
+    display: flex;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+
+.shoe_block .shoe {
+    text-align: center;
+}
+
+.shoe_block .color .preview img {
+    width: 2.4em;
+}
+
+.shoe_block .explore {
+    font-family: var(--g-font);
+    font-weight: var(--w-bold);
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-right: 0.5em;
+}
+
+.shoe_block .review {
+    font-family: var(--g-font);
+    font-weight: var(--w-bold);
+    text-transform: uppercase;
+    margin-right: 0.8em;
+    font-size: 1.2rem;
+}
+
+.shoe_block .name_block {
+    padding-left: 40px;
+    padding-top: 3.5em;
+}
+
+.shoe_block .adidas {
+    font-family: var(--g-font);
+    font-weight: var(--w-regular);
+    text-transform: uppercase;
+    font-size: 2rem;
+    height: 2.2rem;
+}
+
+.shoe_block .name {
+    font-family: var(--g-font);
+    font-weight: var(--w-bold);
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+}
+
+.shoe_block .person {
+    text-transform: uppercase;
+    font-family: var(--g-font);
+    font-weight: var(--w-regular);
+    font-size: 1.1rem;
+}
+
+.shoe_block .size {
+    font-family: var(--g-font);
+    text-transform: uppercase;
+    font-weight: var(--w-bold);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.2em;
+}
+
+.shoe_block .size i {
+    font-size: 0.8rem;
+    margin-right: 0.5em;
+}
+
+.shoe_block .addShoe {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: var(--g-font);
+    font-weight: var(--w-bold);
+    padding: 0.8em 1.3em;
+    margin-top: 1.3em;
+}
+
+.dots {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.dots .dot {
+    background-color: #a0a0a0;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+}
+
+.dots .container {
+    display: flex;
+    position: relative;
+}
+
+.dots .container .dot:first-child {
+    margin-left: 0;
+}
+
+.dots .container .dot:last-child {
+    margin-right: 0;
+}
+
+.dots .container::before {
+    content: '1';
+    display: block;
+    position: absolute;
+    width: 2.2rem;
+    height: 0.7rem;
+    left: 0; /* 1.5rem Один шаг влево */
+    border-radius: 0.30rem;
+    background-color: #5e6168;
+    color: #fff;
+    text-align: center;
+    font-size: 0.55em;
+    font-family: var(--g-font);
+    font-weight: var(--w-bold);
+}
+
+
+
+
+
+
+
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    padding-bottom: 2.6em;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.footer .anchors {
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+}
+
+.footer .back {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    font-family: var(--g-font);
+    text-transform: uppercase;
+    color: #b0b0b0;
+}
+
+.footer .left {
+    font-size: 2.5rem;
+    border: 4px solid #b0b0b0;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #b0b0b0;
+    margin-right: 1rem;
+    font-weight: var(--w-regular);
+}
+
+.footer .anchors {
+    align-items: center;
+}
+
+.footer .anchors a {
+    text-transform: uppercase;
+    color: #9d9d9d;
+    font-size: 1.3rem;
+    font-family: var(--g-font);
+    text-decoration: none;
+    font-weight: var(--w-medium);
+}
+
+.footer .anchors li {
+    margin-left: 4em;
+}
+
+.footer .anchors li:first-child {
+    margin-left: 0;
+}
+
+@media (max-width: 1252px) {
+    :root {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1012px) {
+    :root {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 896px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .shoe_block .shoe img {
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .header .logo {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 5em;
+    }
+
+    .header .menu {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .header .nav1 {
+        margin-left: 0;
+    }
+
+    .header {
+        padding-right: 0;
+    }
+
+    .shoe_block {
+        flex-direction: column;
+    }
+
+    .shoe_block .name_block {
+        order: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .shoe_block .name_block .size {
+        display: flex;
+        justify-content: center;
+    }
+
+    .shoe_block .name_block * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .shoe_block .shoe {
+        order: 1;
+        margin-top: 3em;
+    }
+
+    .shoe_block .info {
+        order: 2;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .shoe_block .info * {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 524px) {
+    .header .nav2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+        margin-left: -2.3em;
+    }
+
+    .header .nav2 li {
+        font-size: 1.8rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 482px) {
+    .header .nav1 li {
+        margin-right: 1em;
+    }
+
+    .header .menu img {
+        width: 2.5em;
+    }
+
+    .header .logo {
+        width: 3em;
+    }
+
+    .header .nav1 {
+        margin-left: -2em;
+    }
+}
+
+@media (max-width: 452px) {
+    .footer {
+        margin-top: 7em;
+    }
+
+    .footer .anchors li {
+        margin-left: 1em;
+    }
+
+    .footer .left {
+        width: 1.9em;
+        height: 1.9em;
+        font-size: 2rem;
+    }
+}
