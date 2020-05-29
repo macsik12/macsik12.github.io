@@ -22,7 +22,25 @@
             <ul class="nav2">
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Join | Log In</a></li>
-                <li><a href="#">Cart [ <span id="cart_count">0</span> ]</a></li>
+                <li class="cart_li"><a href="#">Cart [ <span id="cart_count">0</span> ]</a>
+                    <div class="cart" id="cart">
+                        <h2>Cart</h2>
+                        <div class="products" id="products">
+                            
+                        </div>
+                        <div class="info" id="info-block">
+                            <div class="amount">
+                                Amount:
+                                <span id="number">3</span>
+                            </div>
+                            <div class="total" id="total">
+                                <span id="total_price">365</span>$
+                            </div>
+                        </div>
+                        <div class="buy" id="buy">buy</div>
+                        <div id="empty">Empty</div>
+                    </div>
+                </li>
                 <li id="languages_li" class="languages_li">
                     <a href="#" id="rtt"><span id="country">USA</span> <i class="fas fa-chevron-down"></i></a>
                     <div class="list" id="languages_list">
@@ -45,39 +63,39 @@
         <div class="shoe_block">
             <div class="info">
                 <div class="price">
-                    <span class="wallet">$</span>120
+                    <span class="wallet">$</span><span id="price_span">120</span>
                 </div>
                 <div class="color">
                     <div class="label">
                         <p>Color:</p>
-                        <p class="type">Exlusive</p>
+                        <p class="type" id="colorType">Exlusive</p>
                     </div>
                     <div class="preview">
-                        <img src="img/colors/color1.png" alt="Цвет 1">
+                        <img src="img/colors/color1.png" id="shoe_color" alt="Цвет 1">
                     </div>
                 </div>
                 <p class="explore">Explore</p>
                 <p class="review">Review</p>
             </div>
             <div class="shoe">
-                <img src="img/shoes/shoe1.png" alt="Обувь 1">
+                <img src="img/shoes/shoe1.png" id="shoe_img" alt="Обувь 1">
             </div>
             <div class="name_block">
                 <h2 class="adidas">Adidas</h2>
-                <h3 class="name">Superstar</h3>
+                <h3 class="name" id="name_h3">Superstar</h3>
                 <h4 class="person">Men's shoe</h4>
-                <div class="size"><i class="fas fa-chevron-down"></i> Size</div>
-                <div class="addShoe">Add to cart</div>
+                <div class="size" id="open_size"><i class="fas fa-chevron-down"></i> Size: &nbsp;<span id="sz"></span>
+                    <div class="sizes_block" id="sizes_block">
+                        <p>30</p>
+                        <p>20</p>
+                    </div>
+                </div>
+                <div class="addShoe" id="addCartBtn">Add to cart</div>
             </div>
         </div>
         <div class="dots">
-            <div class="container">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+            <div class="container" id="dots_container">
+                
             </div>
         </div>
     </main>
