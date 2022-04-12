@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пиксель</title>
+    <style>
+      html {
+        background-color: #f7f7f7;
+      }
+
+      .grid {
+        border: 2px solid #777;
+      }
+
+      .grid .row {
+        display: flex;
+      }
+
+      .grid .cell {
+        width: 23px;
+        height: 23px;
+        box-shadow: inset 0 0 0 1px #eee;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Я*(знаю) Рисуй (~)(Все кто зайдёт увидят)</h1>
+    <p>Школа 21 ничего не знает (34197)</p>
+    <p>Рисовать можно только по одному пикселю (&)</p>
+    <div class="container">
+      <input type="color" id="color" />
+    </div>
+    <div class="container">
+      <div class="grid"></div>
+    </div>
+    <script>
+      const colorPicker = document.getElementById('color')
+
+      function drawPixel(x, y, color = '#000') {
+        const pixel = document.querySelector(`[data-x="${x}"][data-y="${y}"]`)
+        pixel.style.backgroundColor = color
+      }
+      // Building
+      const grid = document.querySelector('.grid')
+      for (let i = 0; i < 20; i++) {
+        let row = '<div class="row">'
+        for (let j = 0; j < 20; j++) {
+          row += `<div class='cell' data-x="${j}" data-y="${i}"></div>`
+        }
+        grid.innerHTML += row
+        grid.innerHTML += '</div>'
+      }
+
+      const ws = new WebSocket('ws://127.0.0.1:1025')
+
+      ws.onopen = () => {
+        console.log('connected')
+      }
+
+      ws.onmessage = (msg) => {
+        console.log(msg.data)
+        let data
+        try {
+          data = JSON.parse(msg.data)
+        } catch (e) {}
+        console.log(data)
+        if (data && data.action === 'draw') {
+          drawPixel(+data.x, +data.y, data.color)
+        }
+      }
+
+      grid.addEventListener('click', (e) => {
+        if (e.target.classList.contains('cell')) {
+          drawPixel(e.target.dataset.x, e.target.dataset.y, colorPicker.value)
+          ws.send(
+            JSON.stringify({
+              action: 'draw',
+              x: e.target.dataset.x,
+              y: e.target.dataset.y,
+              color: colorPicker.value,
+            })
+          )
+        }
+      })
+    </script>
+  </body>
+</html>
