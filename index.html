@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Пиксель</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js"
+      integrity="sha512-RrQDQUon0OiQVjKQYkMuhtLgx8R/4niagIVdHltxcAJa1+cc8FJFFOhtLuK3YJAoo5mdfAFh98ZQwbDKJgFIpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <style>
       html {
         background-color: #f7f7f7;
@@ -46,6 +52,7 @@
       <div class="grid"></div>
     </div>
     <script>
+      eruda.init()
       const colorPicker = document.getElementById('color')
 
       function drawPixel(x, y, color = '#000') {
